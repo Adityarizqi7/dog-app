@@ -15,8 +15,8 @@ export const viewport = {
 /** @type {import("next").Metadata} */
 export async function generateMetadata() {
 	return {
-		title: 'Dogs',
-		description: 'Dogs World',
+		title: 'Dogs World',
+		description: 'Dogs World - Kumpulan Daftar Ras Anjing',
 		applicationName: 'Dogs World',
 		category: 'dogs',
 		keywords: ['dogs', 'world'],
