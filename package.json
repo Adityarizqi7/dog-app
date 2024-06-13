@@ -1,0 +1,33 @@
+{
+  "name": "next-js-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^2.2.10",
+    "axios": "^1.6.7",
+    "framer-motion": "^11.0.22",
+    "next": "14.1.0",
+    "nextjs-toploader": "^1.6.11",
+    "querystring": "^0.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-paginate": "^8.2.0",
+    "react-photo-album": "^2.4.0",
+    "react-toastify": "^10.0.5",
+    "sharp": "^0.33.3",
+    "swr": "^2.2.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
