@@ -12,7 +12,7 @@ export default function DogCard({image_url, breed_dog}, key) {
                     <img 
                         src={image_url} 
                         alt={`Dog Image - ${breed_dog}`} 
-                        className='rounded-[5px]' 
+                        className='rounded-[5px] mx-auto' 
                     />
                 </div>
             </article>

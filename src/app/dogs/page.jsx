@@ -4,11 +4,9 @@ import DogsList from "./components/DogsList";
 import NoDataExists from '../components/common/no-data-exists';
 
 async function getData(breed) {
-    const res = await fetch(`https://dog.ceo/api/breed/${breed}/images/random/12`, { 
-      next: {
-		revalidate: 1000
-	  }
-    })
+    const res = await fetch(`https://dog.ceo/api/breed/${breed}/images/random/12`, {
+		cache: 'no-store'
+	})
 	
     if (!res) {
 		throw new Error('Failed to Collect Dogs Data.')
