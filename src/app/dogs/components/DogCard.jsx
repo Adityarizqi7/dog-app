@@ -8,14 +8,12 @@ export default function DogCard({image_url, breed_dog}, key) {
         <>
             <article key={key} onClick={() => {
             }} className="dog-card-wrapper cursor-pointer sm:hover:-translate-y-1 transition-transform">
-                <div className="grid place-content-center">
-                    <div className="image-wrapper">
-                        <img 
-                            src={image_url} 
-                            alt={`Dog Image - ${breed_dog}`} 
-                            className='rounded-[5px]' 
-                        />
-                    </div>
+                <div className="image-wrapper">
+                    <img 
+                        src={image_url} 
+                        alt={`Dog Image - ${breed_dog}`} 
+                        className='rounded-[5px]' 
+                    />
                 </div>
             </article>
         </>
