@@ -40,25 +40,10 @@ export default function DogsGenerator() {
                 });
                 throw new Error('Failed to Collect Dogs Data.')
             } else {
-                if (!Array.isArray(res?.message)) {
+                const response = await res.json()
+                if (response) {
                     setLoading(false)
-                    toast.error(' Ras Anjing yang anda cari tidak tersedia.', {
-                        position: "top-right",
-                        autoClose: 3000,
-                        hideProgressBar: true,
-                        closeOnClick: true,
-                        pauseOnHover: false,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "colored",
-                        transition: Slide,
-                    });
-                } else {
-                    const response = await res.json()
-                    if (response) {
-                        setLoading(false)
-                        router.push(`/dogs?breed=${valueInput}`)
-                    }
+                    router.push(`/dogs?breed=${valueInput}`)
                 }
             }
         } catch (error) {
